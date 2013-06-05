@@ -1,12 +1,12 @@
 ---
-layout: main
+layout: post
 title: You CAN see staged diffs
+tags: git
 ---
 ## git diff --staged is awesome
 
 Up until recently I'd never bothered to seek a way to look at the
 diffs of staged files.
-
 The default method will produce a diff assuming a file is not staged for commit:
 
 {% highlight bash %}
