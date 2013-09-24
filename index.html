@@ -3,15 +3,11 @@ layout: main
 title: totallyMike's blog
 ---
 
-<div class="row">
-  <div class="col col-lg-6">
-    <ul>
-      {% for post in site.posts %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        <p {{ post.excerpt }}</p>
-      </li>
-      {% endfor %}
-    </ul>
+{% for post in site.posts %}
+  <div class="row">
+    <div class="small-8 large-8 columns">
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <p {{ post.excerpt }}</p>
+    </div>
   </div>
-</div>
+{% endfor %}

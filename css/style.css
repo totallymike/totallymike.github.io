@@ -2,25 +2,38 @@ html {
   font-size: 100%;
 }
 
-h2 {
-  font-size: 42px;
-  line-height: 52px;
-  margin-bottom: 26px;
-}
-
 body {
   font-size: 1em;
-  line-height: 1.4;
-}
-
-p {
-  line-height: 1.625em;
 }
 
 code {
   font-size: 100%;
 }
 
-.col li {
-  list-style-type: none;
+section.main {
+  margin-top: 0.75em;
+}
+
+article header {
+  display: block;
+  margin-top 1em;
+  margin-bottom: 0.75em;
+}
+
+article header h4 {
+  line-height: 1em;
+  margin: 0;
+}
+article header h6 {
+  font-size: 0.75em;
+  font-weight: normal;
+}
+
+div.highlight {
+  margin-bottom: 1.25em;
+}
+
+.highlight pre {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }

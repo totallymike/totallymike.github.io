@@ -9,27 +9,48 @@
   <meta name="description" content="totallyMike's blog">
   <meta name="author" content="Michael Westbom">
 
-  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="/css/foundation.css">
   <link href="/css/style.css" rel="stylesheet" media="screen">
   <link href="/css/syntax.css" rel="stylesheet">
 
-  <script src="js/vendor/custom.modernizr.js"></script>
+  <script src="/js/vendor/custom.modernizr.js"></script>
+  <style>
+    .container-narrow {
+      max-width: 768px;
+      margin: auto;
+    }
+  </style>
 </head>
-<body>
-  <div class="header">
-    <ul class="nav nav-pills pull-right">
-      <li class="active"><a href="/">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-    <h3 class="text-muted">totallyMike's blog</h3>
+<body class="antialiased off-canvas hide-extras">
+  <div class="container-narrow">
+    <nav class="top-bar hide-for-small">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="/">totallyMike's blog</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+      <section class="top-bar-section">
+        <ul class="right">
+          <li class="divider"></li>
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </section>
+    </nav>
+    <section class="main">
+      {{ content }}
+    </section>
   </div>
-  {{ content }}
 
   <!-- Javascript plugins (requires jQuery) -->
   <script src="//code.jquery.com/jquery-2.0.0.min.js"></script>
 
-  <!-- Include all bootstrap plugins -->
-  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/foundation.min.js"></script>
+
+  <script>
+    $(document).foundation()
+  </script>
 </body>
 </html>

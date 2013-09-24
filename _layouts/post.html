@@ -1,8 +1,17 @@
 ---
 layout: main
 ---
-<div class="entry">
-  <article>
-    {{ content }}
-  </article>
+<div class="row">
+  <div class="large-12 columns">
+    <article>
+      <header>
+        <h4>{{ page.title }}</h4>
+        <h6>{{ site.author }} on 
+            <time pubdate datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
+          </h6>
+        </details>
+      </header>
+      {{ content }}
+    </article>
+  </div>
 </div>
