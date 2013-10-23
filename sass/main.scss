@@ -1,0 +1,38 @@
+body {
+  background-color: #7bfaa9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1em;
+  font-style: none;
+  font-weight: normal;
+  margin: 0;
+}
+
+#container {
+  max-width: 768px;
+  margin-left: 120px;
+  margin-right: auto;
+}
+
+.top-bar {
+  with: 100%;
+  height: 46px;
+  background-color: #f384fc;
+  h1 {
+    font-size: 2em;
+    line-height: 46px;
+    float: left;
+  }
+  ul { list-style-type: none; }
+  li {
+    line-height: 46px;
+    float: right;
+    padding-left: 1em;
+    padding-right: 0.5em;
+    a {
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+}
